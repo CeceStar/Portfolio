@@ -28,7 +28,7 @@ body {
 
 /*Style used for styling of headings*/
 .intro-paragraph h2 {
-  padding-top: 40px;
+  padding-top: 6rem;
   text-align: center;
   font-size: 2.4rem;
   font-weight: inherit;
@@ -195,6 +195,39 @@ p {
 /*---------------------Contact page---------------------*/
 .contact-page {
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
   background-color: var(--light-pink);
+}
+
+.contact-container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.contact-general {
+  color: black;
+  font-size: 1.4rem;
+  margin-top: 5rem;
+}
+
+.contact-general i {
+  color: var(--dark-pink);
+  font-size: 2.6rem;
+  padding-right: 1rem;
+}
+
+footer {
+  background-color: var(--light-sand);
+  height: 2rem;
+  width: 100vw;
+  margin: 0 auto;
+  position: relative;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1rem;
+  width: 100vw;
+  position: absolute;
+  bottom: 3px;
 }
