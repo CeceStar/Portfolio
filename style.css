@@ -26,15 +26,59 @@ body {
   background: var(--light-blue);
 }
 
-p {
+/*Style used for styling of headings*/
+.intro-paragraph h2 {
+  padding-top: 40px;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: inherit;
+}
+.highlight-pink {
+  color: var(--dark-pink);
   font-size: 2.4rem;
 }
+
+.highlight-blue {
+  color: var(--dark-blue);
+  font-size: 2.4rem;
+}
+
+/*Style used for all <p>*/
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/*---------------------Navigation bar---------------------*/
+
+.navigation-bar {
+  width: 100vw;
+  height: 4vh;
+  background-color: var(--dark-blue);
+  position: fixed;
+  z-index: 1;
+}
+
+.menu i {
+  color: var(--sand);
+  font-size: 2.6rem;
+  margin-right: 4vw;
+  text-align: center;
+  float: right;
+  padding-top: 4px;
+}
+
+/*---------------------Intro page---------------------*/
 
 .home {
   width: 100vw;
   height: 100vh;
   background-color: var(--light-blue);
   position: relative;
+}
+.home p {
+  font-size: 2.4rem;
 }
 
 .intro {
@@ -54,32 +98,54 @@ p {
 }
 
 .know-more {
-  font-size: 1.4rem;
   margin: 5rem;
   padding: 1rem 4rem 1rem 4rem;
   background-color: var(--light-pink);
   border: black solid 1px;
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.4rem;
 }
 
+.know-more a {
+  text-decoration: none;
+  cursor: pointer;
+
+  color: black;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.intro button:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.intro button:focus {
+  background-color: var(--light-pink);
+  outline: none;
+}
 /* Intro in other scrolls*/
-
-.intro-paragraph {
-  margin: 40px;
-  text-align: center;
-}
 
 /*---------------------About page---------------------*/
 
-.about {
+.about-page {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(113, 187, 189);
+  background-color: var(--beau-blue);
 }
 
-.portfolio {
+/*---------------------Portfolio page---------------------*/
+
+.portfolio-page {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(77, 126, 128);
+  background-color: var(--light-sand);
+}
+
+/*---------------------Contact page---------------------*/
+.contact-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--light-pink);
 }
