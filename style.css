@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-size: 62.5%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap");
+
+:root {
+  --light-blue: #c5d5ea;
+  --beau-blue: #b6cee1;
+  --light-sand: #d8e1e9;
+  --sand: #cbc6d2;
+  --light-pink: #e1ccde;
+  --lighterdark-pink: #8c7284;
+  --dark-pink: #846075;
+  --dark-blue: #166088;
+
+  --raleway: "Raleway", sans-serif;
+}
+
+/*Fonts*/
+body {
+  font-family: var(--raleway);
+  background: var(--light-blue);
+}
+
+p {
+  font-size: 2.4rem;
+}
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--light-blue);
+  position: relative;
+}
+
+.intro {
+  padding-top: 30vh;
+  text-align: center;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+.My-Name {
+  color: var(--dark-pink);
+  font-size: 2.4rem;
+}
+.FED {
+  color: var(--dark-blue);
+  font-size: 2.4rem;
+}
+
+.know-more {
+  font-size: 1.4rem;
+  margin: 5rem;
+  padding: 1rem 4rem 1rem 4rem;
+  background-color: var(--light-pink);
+  border: black solid 1px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Intro in other scrolls*/
+
+.intro-paragraph {
+  margin: 40px;
+  text-align: center;
+}
+
+/*---------------------About page---------------------*/
+
+.about {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(113, 187, 189);
+}
+
+.portfolio {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(77, 126, 128);
+}
