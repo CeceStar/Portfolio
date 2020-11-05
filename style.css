@@ -66,7 +66,25 @@ p {
   width: 100vw;
 }
 
-.menu i {
+.hamburger {
+  float: right;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+
+.hamburger button:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hamburger button:focus {
+  background-color: transparent;
+  outline: none;
+}
+
+.hamburger i {
   color: var(--sand);
   font-size: 2.4rem;
   margin-right: 2vw;
@@ -75,18 +93,41 @@ p {
   padding-top: 1px;
 }
 
-.menu-overlay {
-  height: 30vh;
-  position: fixed;
-  z-index: 1;
-  top: 0;
+.dropdown-menu {
+  position: absolute;
+  top: 4vh;
   right: 0;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
+  background: #1660888f;
+  width: 20vw;
+  height: 10vh;
+  overflow: hidden;
+  /* hide the menu above the screen by default */
+  transform: translateY(400vh);
+  transition: transform 0.2s ease;
+  margin: 0 auto;
+}
+.dropdown-menu li {
+  width: 20vw;
+  text-align: center;
+  padding: 2px;
+}
+.menu-link {
+  width: 20vw;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--light-sand);
+  text-align: center;
+  padding: 2px;
 }
 
+.show-dropdown {
+  /* show the menu */
+  transform: translateY(0);
+}
+
+.change-hamburgerbutton {
+  background-color: var(--lighterdark-pink);
+}
 /*---------------------Intro page---------------------*/
 
 .home {
