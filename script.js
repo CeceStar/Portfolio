@@ -25,6 +25,11 @@ function stickNavOnScroll() {
 
 //MAKE THE HAMBURGER ICON CHANGE TO A CLOSE ICON
 function toggleHamburger() {
-    dropdownMenu.classList.toggle("show-dropdown")
-    
+    dropdownMenu.classList.toggle("show-dropdown");
+    let iconClass = hamburgerButton.children[0].className
+    if (iconClass === "fas fa-bars") {
+        hamburgerButton.children[0].className =  "fas fa-times";
+    } else {
+    hamburgerButton.children[0].className =  "fas fa-bars" ;
+    }
 }
