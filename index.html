@@ -11,10 +11,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
   </head>
   <body>
-    <div class="navigation-bar">
-      <span class="menu"><i class="fas fa-bars"></i></span>
-    </div>
     <div class="home">
+      <a id="start-link"></a>
       <header class="intro">
         <h1>
           Hello, my name is
@@ -26,6 +24,21 @@
     </div>
     <div class="about-page">
       <a id="about-link"></a>
+      <div id="navigation-bar">
+        <button class="hamburger"><i class="fas fa-bars"></i></button>
+
+        <nav class="dropdown-menu">
+          <ul>
+            <li><a class="menu-link" href="#start-link">Start</a></li>
+            <li><a class="menu-link" href="#about-link">About me</a></li>
+            <li>
+              <a class="menu-link" href="#portfolio-link">My Portfolio</a>
+            </li>
+            <li><a class="menu-link" href="#contact-link">Contact me</a></li>
+          </ul>
+        </nav>
+      </div>
+
       <span class="intro-paragraph">
         <h2><span class="highlight-blue">About</span> me</h2>
         <p>
@@ -34,19 +47,21 @@
         </p>
       </span>
       <div class="content-about-me">
-        <img src="Pictures/CeciliaH_small_edited.png" />
+        <img
+          src="Pictures/CeciliaH_small_edited.png"
+          alt="Portrait picture of me smiling. I have long blond hair, caucasian skin and the head is tilted to the right."
+        />
         <p>
-          I’m a woman born and raised in Stockholm, Sweden and has erlier worked
-          in the hotel industry as both Front desk manager but also as system
-          responisble for the booking system withing the hotel chain. I have
-          always been interested in tech, and that’s how I found more
+          I’m a woman born and raised in Stockholm, Sweden and has earlier
+          worked in the hotel industry as both Front desk manager but also as
+          system responsible for the booking system within the hotel chain. I
+          have always been interested in tech, and that’s how I found more
           information about coding. It got my attention and after some back and
           forth, I finally applied for this Frontend developer program at Hyper
-          Island, and got in! I'm in the middle of the propgram, and are
-          expected to graduate in April 2022. In October 2021 I will do a 24
-          weeks long internship. Contact me if you are interested in having me
-          in your company! I'm eager to learn and good at seeking information
-          online.
+          Island, and got in! I'm in the middle of the program, and are expected
+          to graduate in April 2022. In October 2021 I will do a 24 weeks long
+          internship. Contact me if you are interested in having me in your
+          company! I'm eager to learn and good at seeking information online.
         </p>
       </div>
       <div class="skills-container">
@@ -88,7 +103,7 @@
           <i class="fab fa-github"></i> https://github.com/CeceStar
         </div>
         <div class="contact-general">
-          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-linkedin-in"></i>
           https://se.linkedin.com/in/cecilia-hallerby
         </div>
         <div class="contact-general">

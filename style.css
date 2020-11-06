@@ -54,23 +54,79 @@ p {
 
 /*---------------------Navigation bar---------------------*/
 
-.navigation-bar {
+#navigation-bar {
   width: 100vw;
   height: 4vh;
-  background-color: var(--dark-blue);
-  position: fixed;
-  z-index: 1;
+  background-color: #1660888f;
 }
 
-.menu i {
+.stickTheNavbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.hamburger {
+  float: right;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+
+.hamburger button:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hamburger button:focus {
+  background-color: transparent;
+  outline: none;
+}
+
+.hamburger i {
   color: var(--sand);
-  font-size: 2.6rem;
-  margin-right: 4vw;
+  font-size: 2.4rem;
+  margin-right: 2vw;
   text-align: center;
   float: right;
-  padding-top: 4px;
+  padding-top: 1px;
 }
 
+.dropdown-menu {
+  position: absolute;
+  top: 4vh;
+  right: 0;
+  background: #1660888f;
+  width: 20vw;
+  height: 12vh;
+  overflow: hidden;
+  /* hide the menu above the screen by default */
+  /* transform: translateX(250vw); */
+  transition: transform 0.3s ease-in-out;
+  margin: 0 auto;
+  display: none;
+}
+.dropdown-menu li {
+  width: 20vw;
+  text-align: center;
+  padding: 2px;
+}
+.menu-link {
+  width: 20vw;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--light-sand);
+  padding: 2px;
+}
+
+.show-dropdown {
+  display: inline-block;
+}
+
+.change-hamburgerbutton {
+  background-color: var(--lighterdark-pink);
+}
 /*---------------------Intro page---------------------*/
 
 .home {
@@ -133,16 +189,17 @@ p {
 
 .about-page {
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   background-color: var(--beau-blue);
 }
 
 .content-about-me {
   width: 80vw;
-  height: 50vh;
+  height: 70vh;
   margin: 0 auto;
   padding-top: 3rem;
   line-height: 1.6;
+  overflow: scroll;
 }
 
 .content-about-me img {
