@@ -52,6 +52,8 @@ p {
   margin: 0 auto;
 }
 
+/*I never want the screen to be smaller than 300px*/
+
 /*---------------------Navigation bar---------------------*/
 
 #navigation-bar {
@@ -268,61 +270,59 @@ p {
 /*---------------------Portfolio page---------------------*/
 
 .portfolio-page {
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   background-color: var(--light-sand);
 }
 
-/*FOR A COMPUTER*/
-/* .grid-container {
+.grid-container {
+  margin: 0 auto;
   margin-top: 1rem;
+  min-height: 70vh;
+  max-width: 800px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 25vh 25vh 25vh;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 1rem;
   padding: 0rem 1rem 0rem 1rem;
-} */
-
-@media (min-width: 600px) {
-  .grid-container {
-    margin: 0 auto;
-    margin-top: 1rem;
-    height: 70vh;
-    min-width: 600px;
-    max-width: 800px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
-    padding: 0rem 1rem 0rem 1rem;
-  }
-
-  .project {
-    background-color: var(--dark-blue);
-    border-radius: 20px;
-  }
 }
 
-@media (max-width: 600px) {
-  .grid-container {
-    margin: 0 auto;
-    margin-top: 1rem;
-    height: 70vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
-    padding: 0rem 1rem 0rem 1rem;
-  }
+.project {
+  background-color: var(--dark-blue);
+  border-radius: 20px;
+  min-width: 100px;
+  max-width: 100%;
+  min-height: 150px;
+  max-height: 100%;
+}
 
-  .project {
-    background-color: var(--dark-blue);
-    border-radius: 20px;
-  }
+.end-portfolio {
+  text-align: center;
+}
+
+.contact-me {
+  margin: 3rem 0rem 2rem 0rem;
+  padding: 1rem 4rem 1rem 4rem;
+  background-color: var(--light-pink);
+  border: black solid 1px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.4rem;
+}
+
+.portfolio-page button:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.portfolio-page button:focus {
+  background-color: var(--light-pink);
+  outline: none;
 }
 
 /*---------------------Contact page---------------------*/
 .contact-page {
   width: 100vw;
-  height: 95vh;
+  height: 100vh;
   background-color: var(--light-pink);
 }
 
