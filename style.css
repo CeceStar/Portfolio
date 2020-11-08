@@ -23,7 +23,7 @@
 /*Fonts*/
 body {
   font-family: var(--raleway);
-  background: var(--light-blue);
+  background: var(--beau-blue);
 }
 
 /*Style used for styling of headings*/
@@ -52,7 +52,7 @@ p {
   margin: 0 auto;
 }
 
-/*I never want the screen to be smaller than 300px*/
+/*I never want the screen to be smaller than 260px*/
 
 /*---------------------Navigation bar---------------------*/
 
@@ -103,9 +103,6 @@ p {
   width: 20vw;
   height: 12vh;
   overflow: hidden;
-  /* hide the menu above the screen by default */
-  /* transform: translateX(250vw); */
-  /* transition: transform 0.3s ease-in-out; */
   margin: 0 auto;
   display: none;
 }
@@ -113,10 +110,11 @@ p {
   width: 20vw;
   text-align: center;
   padding: 2px;
+  min-width: 95px;
 }
 .menu-link {
   width: 20vw;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   text-decoration: none;
   color: var(--light-sand);
   padding: 2px;
@@ -145,8 +143,8 @@ p {
 .intro {
   padding-top: 30vh;
   text-align: center;
-  margin-left: 15vw;
-  margin-right: 15vw;
+  margin: 0 auto;
+  max-width: 420px;
 }
 
 .My-Name {
@@ -191,18 +189,17 @@ p {
 
 .about-page {
   width: 100vw;
-  height: 120vh;
+  min-height: 100vh;
   background-color: var(--beau-blue);
 }
 
 @media (min-width: 600px) {
   .content-about-me {
-    width: 80vw;
-    height: 40vh;
+    max-width: 800px;
+    min-height: 30vh;
     margin: 0 auto;
     padding-top: 3rem;
     line-height: 1.6;
-    overflow: scroll;
   }
 
   .content-about-me img {
@@ -213,16 +210,18 @@ p {
   }
 
   .content-about-me p {
-    text-align: left;
+    text-align: justify;
+    max-width: 800px;
   }
 }
 
 @media (max-width: 600px) {
   .content-about-me {
     width: 80vw;
-    height: 70vh;
+    min-height: 40vh;
     margin: 0 auto;
     padding-top: 3rem;
+    padding-bottom: 3rem;
     line-height: 1.6;
     overflow: scroll;
   }
@@ -235,7 +234,8 @@ p {
   }
 
   .content-about-me p {
-    text-align: left;
+    text-align: justify;
+    min-width: 250px;
   }
 }
 
@@ -247,13 +247,15 @@ p {
   height: 2rem;
   background-color: var(--lighterdark-pink);
   width: 80vw;
+  max-width: 800px;
   border-radius: 10px;
   margin-bottom: 2rem;
 }
 
 .progress-bar {
-  background-color: var(--light-pink);
+  max-width: 800px;
   height: 2rem;
+  background-color: var(--light-pink);
   border-radius: 10px 0px 0px 10px;
 }
 .html-progress {
@@ -327,7 +329,8 @@ p {
 }
 
 .contact-container {
-  width: 80vw;
+  min-height: 70vh;
+  max-width: 800px;
   margin: 0 auto;
 }
 
