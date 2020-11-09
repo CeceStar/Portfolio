@@ -195,11 +195,13 @@ p {
 
 @media (min-width: 600px) {
   .content-about-me {
+    width: 80vw;
     max-width: 800px;
     min-height: 30vh;
     margin: 0 auto;
     padding-top: 3rem;
     line-height: 1.6;
+    overflow: scroll;
   }
 
   .content-about-me img {
@@ -280,7 +282,7 @@ p {
 .grid-container {
   margin: 0 auto;
   margin-top: 1rem;
-  min-height: 70vh;
+  /* min-height: 70vh; */
   max-width: 800px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -297,7 +299,7 @@ p {
   max-height: 100%;
 }
 
-.end-portfolio {
+.end-portfolio-page {
   text-align: center;
 }
 
@@ -332,6 +334,7 @@ p {
   min-height: 70vh;
   max-width: 600px;
   margin: 0 auto;
+  padding: 3rem;
 }
 
 .contact-general {
