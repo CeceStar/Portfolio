@@ -201,7 +201,6 @@ p {
     margin: 0 auto;
     padding-top: 3rem;
     line-height: 1.6;
-    overflow: scroll;
   }
 
   .content-about-me img {
