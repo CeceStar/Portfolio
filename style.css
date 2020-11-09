@@ -100,11 +100,11 @@ p {
   top: 4vh;
   right: 0;
   background: #1660888f;
-  width: 20vw;
+  min-width: 20vw;
   height: 12vh;
   overflow: hidden;
   margin: 0 auto;
-  display: none;
+  visibility: hidden;
 }
 .dropdown-menu li {
   width: 20vw;
@@ -121,7 +121,7 @@ p {
 }
 
 .show-dropdown {
-  display: inline-block;
+  visibility: visible;
 }
 
 .change-hamburgerbutton {
