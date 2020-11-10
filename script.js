@@ -38,3 +38,20 @@ function toggleDropdown() {
     hamburgerButton.children[0].className =  "fas fa-bars" ;
     }
 }
+
+
+// //Modal of the projects
+// //First picture in the grid
+// let firstProjectImg = document.getElementById("proj1");
+
+// //The modal container
+// let firstModal = document.getElementsById("first-modal");
+
+// //Span element with the closebutton
+// let closeBtn = document.getElementsByClassName("close-project");
+
+// firstProjectImg.addEventListener("click", )
+
+// showModal() {
+// closeBtn[0].style.display = "block";
+// }
