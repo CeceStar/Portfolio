@@ -52,37 +52,57 @@ let closeBtn = document.getElementsByClassName("close-project");
 
 
 //FIRST MODAL
-projectImg[0].addEventListener("click", showFirstModal)
-closeBtn[0].addEventListener("click", closeModal)
+projectImg[0].addEventListener("click", firstModal)
 
-function showFirstModal() {
+
+function firstModal() {
     modal[0].style.display = "block";
-}
 
-function closeModal() {
-    modal[0].style.display = "none"; 
-}
-
-window.onclick = function(event) {
-    if (event.target == modal[0]) {
-        modal[0].style.display = "none";
+    closeBtn[0].addEventListener("click", closeModal)
+    function closeModal() {
+        modal[0].style.display = "none"; 
+    }
+    
+    window.onclick = function(event) {
+        if (event.target === modal[0]) {
+            modal[0].style.display = "none";
+        }
     }
 }
 
-// //SECOND MODAL
-// projectImg[1].addEventListener("click", showFirstModal)
-// closeBtn[1].addEventListener("click", closeModal)
+//SECOND MODAL
+projectImg[1].addEventListener("click", showSecondModal)
 
-// function showFirstModal() {
-//     modal[1].style.display = "block";
-// }
+function showSecondModal() {
+    modal[1].style.display = "block";
 
-// function closeModal() {
-//     modal[1].style.display = "none"; 
-// }
+    closeBtn[1].addEventListener("click", closeModal)
+    function closeModal() {
+        modal[1].style.display = "none"; 
+    }
 
-// window.onclick = function(event) {
-//     if (event.target == modal[1]) {
-//         modal[1].style.display = "none";
-//     }
-// }
+    window.onclick = function(event) {
+        if (event.target === modal[1]) {
+            modal[1].style.display = "none";
+        }
+    }
+}
+
+//THIRD MODAL
+projectImg[2].addEventListener("click", showThirdModal)
+
+function showThirdModal() {
+    modal[2].style.display = "block";
+
+    closeBtn[2].addEventListener("click", closeModal)
+    function closeModal() {
+        modal[2].style.display = "none"; 
+    }
+
+    window.onclick = function(event) {
+        if (event.target === modal[2]) {
+            modal[2].style.display = "none";
+        }
+    }
+}
+
