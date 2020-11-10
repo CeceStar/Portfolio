@@ -288,16 +288,19 @@ p {
   padding: 0rem 1rem 0rem 1rem;
 }
 
-.project {
+.project,
+.project:hover {
   background-color: var(--dark-blue);
   border-radius: 20px;
   min-width: 100px;
   max-width: 100%;
   min-height: 150px;
   max-height: 100%;
+  cursor: pointer;
 }
 
 .modal {
+  display: none;
   position: fixed;
   z-index: 1;
   padding-top: 30vh;
@@ -333,7 +336,6 @@ p {
   top: 0;
   right: 1rem;
   font-size: 2.8rem;
-  
 }
 .close-project:hover,
 .close-project:focus {

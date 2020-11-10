@@ -40,18 +40,49 @@ function toggleDropdown() {
 }
 
 
-// //Modal of the projects
-// //First picture in the grid
-// let firstProjectImg = document.getElementById("proj1");
+//Modal of the projects
+//First picture in the grid
+let projectImg = document.getElementsByClassName("project");
 
-// //The modal container
-// let firstModal = document.getElementsById("first-modal");
+//The modal container
+let modal = document.getElementsByClassName("modal");
 
-// //Span element with the closebutton
-// let closeBtn = document.getElementsByClassName("close-project");
+//Span element with the closebutton
+let closeBtn = document.getElementsByClassName("close-project");
 
-// firstProjectImg.addEventListener("click", )
 
-// showModal() {
-// closeBtn[0].style.display = "block";
+//FIRST MODAL
+projectImg[0].addEventListener("click", showFirstModal)
+closeBtn[0].addEventListener("click", closeModal)
+
+function showFirstModal() {
+    modal[0].style.display = "block";
+}
+
+function closeModal() {
+    modal[0].style.display = "none"; 
+}
+
+window.onclick = function(event) {
+    if (event.target == modal[0]) {
+        modal[0].style.display = "none";
+    }
+}
+
+// //SECOND MODAL
+// projectImg[1].addEventListener("click", showFirstModal)
+// closeBtn[1].addEventListener("click", closeModal)
+
+// function showFirstModal() {
+//     modal[1].style.display = "block";
+// }
+
+// function closeModal() {
+//     modal[1].style.display = "none"; 
+// }
+
+// window.onclick = function(event) {
+//     if (event.target == modal[1]) {
+//         modal[1].style.display = "none";
+//     }
 // }
