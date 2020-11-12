@@ -20,15 +20,15 @@
   --raleway: "Raleway", sans-serif;
 }
 
-/*Fonts*/
 body {
   font-family: var(--raleway);
   background: var(--beau-blue);
+  scroll-behavior: smooth;
 }
 
 /*Style used for styling of headings*/
 .intro-paragraph h2 {
-  padding-top: 6rem;
+  padding-top: 8rem;
   text-align: center;
   font-size: 2.4rem;
   font-weight: inherit;
@@ -54,6 +54,64 @@ p {
 
 /*I never want the screen to be smaller than 260px*/
 
+/*---------------------Intro page---------------------*/
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--light-blue);
+  position: relative;
+}
+
+.home h1,
+.presentation {
+  font-size: 2.4rem;
+  font-weight: var(--raleway);
+}
+
+.hello {
+  font-size: 2.8rem;
+  font-weight: var(--raleway);
+}
+
+.hello i {
+  font-size: 2.8rem;
+  font-weight: var(--raleway);
+}
+.intro {
+  padding-top: 30vh;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 420px;
+}
+
+.know-more {
+  margin: 5rem;
+  padding: 1rem 4rem 1rem 4rem;
+  background-color: var(--light-pink);
+  border: black solid 1px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.4rem;
+}
+
+.know-more a {
+  text-decoration: none;
+  cursor: pointer;
+
+  color: black;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.intro button:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.intro button:focus {
+  background-color: var(--light-pink);
+}
 /*---------------------Navigation bar---------------------*/
 
 #navigation-bar {
@@ -126,65 +184,6 @@ p {
 
 .change-hamburgerbutton {
   background-color: var(--lighterdark-pink);
-}
-/*---------------------Intro page---------------------*/
-
-.home {
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--light-blue);
-  position: relative;
-}
-
-.home h1,
-.presentation {
-  font-size: 2.4rem;
-  font-weight: var(--raleway);
-}
-
-.hello {
-  font-size: 2.8rem;
-  font-weight: var(--raleway);
-}
-
-.hello i {
-  font-size: 2.8rem;
-  font-weight: var(--raleway);
-}
-.intro {
-  padding-top: 30vh;
-  text-align: center;
-  margin: 0 auto;
-  max-width: 420px;
-}
-
-.know-more {
-  margin: 5rem;
-  padding: 1rem 4rem 1rem 4rem;
-  background-color: var(--light-pink);
-  border: black solid 1px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-size: 1.4rem;
-}
-
-.know-more a {
-  text-decoration: none;
-  cursor: pointer;
-
-  color: black;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.intro button:hover {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.intro button:focus {
-  background-color: var(--light-pink);
-  outline: none;
 }
 
 /*---------------------About page---------------------*/
@@ -281,7 +280,7 @@ p {
 
 .grid-container {
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top: 3rem;
   /* min-height: 70vh; */
   max-width: 800px;
   display: grid;
@@ -353,12 +352,12 @@ p {
 }
 
 .modal-project-img {
-  border-radius: 20px;
+  border-radius: 20%;
   max-width: 40%;
   max-height: 40%;
   float: left;
   clear: right;
-  margin: 0rem 2rem 2rem 1rem;
+  margin: 1rem 1rem 1rem 0rem;
 }
 
 .modal-body h3 {
@@ -372,8 +371,6 @@ p {
   text-align: justify;
   width: inherit;
   padding: 3px 0px 3px 0px;
-}
-.modal-body a {
 }
 
 .end-of-page {
@@ -397,7 +394,6 @@ p {
 
 .portfolio-page button:focus {
   background-color: var(--light-pink);
-  outline: none;
 }
 
 /*---------------------Contact page---------------------*/
