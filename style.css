@@ -3,6 +3,7 @@
   padding: 0px;
   margin: 0px;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap");
@@ -20,15 +21,15 @@
   --raleway: "Raleway", sans-serif;
 }
 
-/*Fonts*/
 body {
   font-family: var(--raleway);
   background: var(--beau-blue);
+  width: 100vw;
 }
 
 /*Style used for styling of headings*/
 .intro-paragraph h2 {
-  padding-top: 6rem;
+  padding-top: 8rem;
   text-align: center;
   font-size: 2.4rem;
   font-weight: inherit;
@@ -54,6 +55,64 @@ p {
 
 /*I never want the screen to be smaller than 260px*/
 
+/*---------------------Intro page---------------------*/
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--light-blue);
+  position: relative;
+}
+
+.home h1,
+.presentation {
+  font-size: 2.4rem;
+  font-weight: var(--raleway);
+}
+
+.hello {
+  font-size: 2.8rem;
+  font-weight: var(--raleway);
+}
+
+.hello i {
+  font-size: 2.8rem;
+  font-weight: var(--raleway);
+}
+.intro {
+  padding-top: 30vh;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 420px;
+}
+
+.know-more {
+  margin: 5rem;
+  padding: 1rem 4rem 1rem 4rem;
+  background-color: var(--light-pink);
+  border: black solid 1px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.4rem;
+}
+
+.know-more a {
+  text-decoration: none;
+  cursor: pointer;
+
+  color: black;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.intro button:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.intro button:focus {
+  background-color: var(--light-pink);
+}
 /*---------------------Navigation bar---------------------*/
 
 #navigation-bar {
@@ -126,63 +185,6 @@ p {
 
 .change-hamburgerbutton {
   background-color: var(--lighterdark-pink);
-}
-/*---------------------Intro page---------------------*/
-
-.home {
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--light-blue);
-  position: relative;
-}
-.home h1 {
-  font-size: 2.4rem;
-  font-weight: var(--raleway);
-}
-
-.intro {
-  padding-top: 30vh;
-  text-align: center;
-  margin: 0 auto;
-  max-width: 420px;
-}
-
-.My-Name {
-  color: var(--dark-pink);
-  font-size: 2.4rem;
-}
-.FED {
-  color: var(--dark-blue);
-  font-size: 2.4rem;
-}
-
-.know-more {
-  margin: 5rem;
-  padding: 1rem 4rem 1rem 4rem;
-  background-color: var(--light-pink);
-  border: black solid 1px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-size: 1.4rem;
-}
-
-.know-more a {
-  text-decoration: none;
-  cursor: pointer;
-
-  color: black;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.intro button:hover {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.intro button:focus {
-  background-color: var(--light-pink);
-  outline: none;
 }
 
 /*---------------------About page---------------------*/
@@ -279,7 +281,7 @@ p {
 
 .grid-container {
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top: 3rem;
   /* min-height: 70vh; */
   max-width: 800px;
   display: grid;
@@ -288,16 +290,118 @@ p {
   padding: 0rem 1rem 0rem 1rem;
 }
 
-.project {
+.project,
+.project:hover {
   background-color: var(--dark-blue);
   border-radius: 20px;
   min-width: 100px;
   max-width: 100%;
   min-height: 150px;
   max-height: 100%;
+  cursor: pointer;
 }
 
-.end-portfolio-page {
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 30vh;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: var(--dark-blue);
+  background-color: #1660888f;
+}
+
+.modal-content {
+  position: relative;
+  background-color: var(--sand);
+  margin: auto;
+  padding: 0;
+  border: 1px solid black;
+  width: 60vw;
+  overflow: auto;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  padding: 10px 16px;
+  background-color: var(--light-sand);
+  color: black;
+  font-size: 2.8rem;
+}
+
+.close-project {
+  position: absolute;
+  color: black;
+  top: 0;
+  right: 1rem;
+  font-size: 2.8rem;
+}
+.close-project:hover,
+.close-project:focus {
+  color: var(--lighterdark-pink);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 10px 16px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.modal-project-img {
+  border-radius: 20%;
+  max-width: 40%;
+  max-height: 40%;
+  float: left;
+  clear: right;
+  margin: 1rem 1rem 1rem 0rem;
+}
+
+.modal-body h3 {
+  text-align: left;
+  font-size: 1.6rem;
+  width: inherit;
+  padding: 3px 0px 3px 0px;
+}
+
+.modal-body p {
+  text-align: justify;
+  width: inherit;
+  padding: 3px 0px 3px 0px;
+}
+
+.end-of-page {
   text-align: center;
 }
 
@@ -318,7 +422,6 @@ p {
 
 .portfolio-page button:focus {
   background-color: var(--light-pink);
-  outline: none;
 }
 
 /*---------------------Contact page---------------------*/
@@ -335,16 +438,49 @@ p {
   padding: 3rem;
 }
 
-.contact-general {
+.contact-general,
+.contact-general a {
   color: black;
   font-size: 1.4rem;
   margin-top: 5rem;
+  text-decoration: none;
 }
 
 .contact-general i {
   color: var(--dark-pink);
   font-size: 2.6rem;
   padding-right: 1rem;
+}
+
+/* Arrow going up*/
+@-webkit-keyframes fading-up {
+  from {
+    margin-top: 20px;
+    opacity: 1;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 0;
+  }
+}
+.arrow-up {
+  text-align: center;
+  font-size: 1.2rem;
+  -webkit-animation: fading-up 4s linear infinite;
+  text-decoration: none;
+}
+.arrow-up i {
+  text-align: center;
+  font-size: 2.2rem;
+  text-decoration: none;
+}
+.arrow-up:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.arrow-up:focus {
+  background-color: transparent;
 }
 
 footer {
