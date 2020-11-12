@@ -107,7 +107,7 @@ function showThirdModal() {
 }
 
 
-//Animations!
+//Animations
 ScrollReveal().reveal('.presentation', { 
     delay: 1000, 
     easing: 'ease-in',

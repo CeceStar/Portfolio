@@ -34,6 +34,7 @@ body {
   font-size: 2.4rem;
   font-weight: inherit;
 }
+
 .highlight-pink {
   color: var(--dark-pink);
   font-size: 2.4rem;
@@ -52,8 +53,6 @@ p {
   width: 80vw;
   margin: 0 auto;
 }
-
-/*I never want the screen to be smaller than 260px*/
 
 /*---------------------Intro page---------------------*/
 
@@ -79,6 +78,7 @@ p {
   font-size: 2.8rem;
   font-weight: var(--raleway);
 }
+
 .intro {
   padding-top: 30vh;
   text-align: center;
@@ -113,6 +113,7 @@ p {
 .intro button:focus {
   background-color: var(--light-pink);
 }
+
 /*---------------------Navigation bar---------------------*/
 
 #navigation-bar {
@@ -165,12 +166,14 @@ p {
   margin: 0 auto;
   visibility: hidden;
 }
+
 .dropdown-menu li {
   width: 20vw;
   text-align: center;
   padding: 2px;
   min-width: 95px;
 }
+
 .menu-link {
   width: 20vw;
   font-size: 1.6rem;
@@ -244,6 +247,7 @@ p {
 .skill-container {
   margin: 0 auto;
 }
+
 .skill-bar {
   margin: 0 auto;
   height: 2rem;
@@ -260,6 +264,7 @@ p {
   background-color: var(--light-pink);
   border-radius: 10px 0px 0px 10px;
 }
+
 .html-progress {
   width: 70%;
 }
@@ -271,6 +276,7 @@ p {
 .js-progress {
   width: 40%;
 }
+
 /*---------------------Portfolio page---------------------*/
 
 .portfolio-page {
@@ -282,7 +288,6 @@ p {
 .grid-container {
   margin: 0 auto;
   margin-top: 3rem;
-  /* min-height: 70vh; */
   max-width: 800px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -301,6 +306,30 @@ p {
   cursor: pointer;
 }
 
+.end-of-page {
+  text-align: center;
+}
+
+.contact-me {
+  margin: 3rem 0rem 2rem 0rem;
+  padding: 1rem 4rem 1rem 4rem;
+  background-color: var(--light-pink);
+  border: black solid 1px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.4rem;
+}
+
+.portfolio-page button:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.portfolio-page button:focus {
+  background-color: var(--light-pink);
+}
+
+/*--------------Modal popups--------------*/
 .modal {
   display: none;
   position: fixed;
@@ -329,7 +358,6 @@ p {
   animation-duration: 0.4s;
 }
 
-/* Add Animation */
 @-webkit-keyframes animatetop {
   from {
     top: -300px;
@@ -366,6 +394,7 @@ p {
   right: 1rem;
   font-size: 2.8rem;
 }
+
 .close-project:hover,
 .close-project:focus {
   color: var(--lighterdark-pink);
@@ -380,7 +409,7 @@ p {
 }
 
 .modal-project-img {
-  border-radius: 20%;
+  border-radius: 10%;
   max-width: 40%;
   max-height: 40%;
   float: left;
@@ -399,29 +428,6 @@ p {
   text-align: justify;
   width: inherit;
   padding: 3px 0px 3px 0px;
-}
-
-.end-of-page {
-  text-align: center;
-}
-
-.contact-me {
-  margin: 3rem 0rem 2rem 0rem;
-  padding: 1rem 4rem 1rem 4rem;
-  background-color: var(--light-pink);
-  border: black solid 1px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-size: 1.4rem;
-}
-
-.portfolio-page button:hover {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.portfolio-page button:focus {
-  background-color: var(--light-pink);
 }
 
 /*---------------------Contact page---------------------*/
@@ -452,7 +458,7 @@ p {
   padding-right: 1rem;
 }
 
-/* Arrow going up*/
+/*-----------Arrow CSS-----------*/
 @-webkit-keyframes fading-up {
   from {
     margin-top: 20px;
@@ -463,17 +469,20 @@ p {
     opacity: 0;
   }
 }
+
 .arrow-up {
   text-align: center;
   font-size: 1.2rem;
   -webkit-animation: fading-up 4s linear infinite;
   text-decoration: none;
 }
+
 .arrow-up i {
   text-align: center;
   font-size: 2.2rem;
   text-decoration: none;
 }
+
 .arrow-up:hover {
   text-decoration: none;
   cursor: pointer;
@@ -482,6 +491,8 @@ p {
 .arrow-up:focus {
   background-color: transparent;
 }
+
+/*---------------------Footer line---------------------*/
 
 footer {
   background-color: var(--light-sand);
