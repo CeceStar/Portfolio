@@ -8,16 +8,25 @@
       src="https://kit.fontawesome.com/81faf1afc5.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <div class="home">
       <a id="start-link"></a>
       <header class="intro">
-        <h1>
-          Hello, my name is
-          <span class="highlight-pink">Cecilia Hallerby</span> and I'm a
-          soon-to-be <span class="highlight-blue">Frontend developer</span>
+        <h1 class="animate__animated animate__heartBeat">
+          <span class="hello">Hello <i class="far fa-hand-peace"></i></span
+          ><br /><span class="presentation">
+            My name is
+            <span class="highlight-pink">Cecilia Hallerby</span>
+            and I'm soon-to-be a
+            <span class="highlight-blue">Frontend developer</span></span
+          >
         </h1>
         <a href="#about-link"><button class="know-more">Know more</button></a>
       </header>
@@ -40,190 +49,91 @@
           </ul>
         </nav>
       </div>
-
-      <span class="intro-paragraph">
-        <h2><span class="highlight-blue">About</span> me</h2>
-        <p>
-          Just a little short text about my previous experience and my level of
-          some skills.
-        </p>
-      </span>
-      <div class="content-about-me">
-        <img
-          src="Pictures/CeciliaH_small_edited.png"
-          alt="Portrait picture of me smiling. I have long blond hair, caucasian skin and the head is tilted to the right."
-        />
-        <p>
-          I’m a woman born and raised in Stockholm, Sweden and has earlier
-          worked in the hotel industry as both Front desk manager but also as
-          system responsible for the booking system within the hotel chain. I
-          have always been interested in tech, and that’s how I found more
-          information about coding. It got my attention and after some back and
-          forth, I finally applied for this Frontend developer program at Hyper
-          Island, and got in! I'm in the middle of the program, and are expected
-          to graduate in April 2022. In October 2021 I will do a 24 weeks long
-          internship. Contact me if you are interested in having me in your
-          company! I'm eager to learn and good at seeking information online.
-        </p>
-      </div>
-      <div class="skills-container">
-        <p>HTML</p>
-        <div class="skill-bar">
-          <div class="progress-bar html-progress"></div>
+      <div class="about-me-content">
+        <span class="intro-paragraph">
+          <h2><span class="highlight-blue">About</span> me</h2>
+          <p>
+            Just a little short text about my previous experience and my level
+            of some skills.
+          </p>
+        </span>
+        <div class="content-about-me">
+          <img
+            src="Pictures/CeciliaH_small_edited.png"
+            alt="Portrait picture of me smiling. I have long blond hair, caucasian skin and the head is tilted to the right."
+          />
+          <p>
+            I’m a woman born and raised in Stockholm, Sweden and has earlier
+            worked in the hotel industry as both Front desk manager but also as
+            system responsible for the booking system within the hotel chain. I
+            have always been interested in tech, and that’s how I found more
+            information about coding. It got my attention and after some back
+            and forth, I finally applied for this Frontend developer program at
+            Hyper Island, and got in! I'm in the middle of the program, and are
+            expected to graduate in April 2022. In October 2021 I will do a 24
+            weeks long internship. Contact me if you are interested in having me
+            in your company! I'm eager to learn and good at seeking information
+            online.
+          </p>
         </div>
-        <p>CSS</p>
-        <div class="skill-bar">
-          <div class="progress-bar css-progress"></div>
+        <div class="skills-container">
+          <p>HTML</p>
+          <div class="skill-bar">
+            <div class="progress-bar html-progress"></div>
+          </div>
+          <p>CSS</p>
+          <div class="skill-bar">
+            <div class="progress-bar css-progress"></div>
+          </div>
+          <p>JavaScript</p>
+          <div class="skill-bar">
+            <div class="progress-bar js-progress"></div>
+          </div>
         </div>
-        <p>JavaScript</p>
-        <div class="skill-bar">
-          <div class="progress-bar js-progress"></div>
+        <div class="end-of-page">
+          <button
+            onclick="window.location.href= '#portfolio-link'"
+            class="contact-me"
+          >
+            Look at my portfolio
+          </button>
         </div>
-      </div>
-      <div class="end-of-page">
-        <button
-          onclick="window.location.href= '#portfolio-link'"
-          class="contact-me"
-        >
-          Look at my portfolio
-        </button>
       </div>
     </div>
     <div class="portfolio-page">
       <a id="portfolio-link"></a>
-      <span class="intro-paragraph">
-        <h2>My <span class="highlight-pink">Portfolio</span></h2>
-        <p>
-          This is some project I have been working on. <br />
-          Click on one to read more!
-        </p>
-      </span>
-      <!-- HERE THE GRID STARTS -->
-      <div class="grid-container">
-        <img
-          src="/Pictures/My personal page.png"
-          class="project"
-          id="proj1"
-          alt="Printscreen from the first page of my personal webpage that is the first project I built. It says 'Hi there!' in scrabble letters and there are sunflowers in the background with a woman about to drag her hand through it. It has a picture of me beneath it and you see some text to the left of it. The headline says 'I'm Ceccilia' and the next underneath is too small to read in this view."
-        />
-        <img
-          src="/Pictures/Psycology game.png"
-          class="project"
-          alt="Printscreen of my game that I called 'Revers Psycology game'. It has a gray-ish background and cherryred details. You see the border of a red window with a red button in the middle."
-        />
-        <img
-          src="/Pictures/Habit-tracker.png"
-          class="project"
-          alt="Printscreen of a group project called 'Redaing tracker'. It has a bluegreen background and a window in the top center. The window is sandcoloread and you see a heading and a button, and some text between. The heading and button is in orange and the text is in black. The heading says 'Reading tracker'."
-        />
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-      </div>
-      <!-- HERE IS THE FIRST MODAL -->
-      <div class="modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close-project"><i class="fas fa-times"></i></span>
-            <h2>My personal webpage</h2>
-          </div>
-          <div class="modal-body">
-            <img
-              src="/Pictures/My personal page.png"
-              class="modal-project-img"
-              alt="Printscreen from the first page of my personal webpage that is the first project I built. It says 'Hi there!' in scrabble letters and there are sunflowers in the background with a woman about to drag her hand through it. It has a picture of me beneath it and you see some text to the left of it. The headline says 'I'm Ceccilia' and the next underneath is too small to read in this view."
-            />
-            <h3>What was the breif?</h3>
-            <p>
-              Here is some text regarding what I have learned during my first
-              project. I know that this is not good to write in the HTML but
-              right now this is what I know. I don't have a database and I
-              missed the LocalStorage learning really, so this is what I can
-              accomplish in this short time. Just writing some mote tect to see
-              whereig goes yes its filling up.
-            </p>
-            <h3>What did I learned?</h3>
-            <p>
-              I have learned a lot about buttons and links during this project.
-              Also worked alot with positioning, playing with grid and float
-              property and position property
-            </p>
-            <p>
-              <!-- <a href="">Visit this site</a>, Not published yet.-->
-            </p>
-          </div>
+      <div class="portfolio-page-content">
+        <span class="intro-paragraph">
+          <h2>My <span class="highlight-pink">Portfolio</span></h2>
+          <p>
+            This is some project I have been working on. <br />
+            Click on one to read more!
+          </p>
+        </span>
+        <!-- HERE THE GRID STARTS -->
+        <div class="grid-container">
+          <img
+            src="/Pictures/My personal page.png"
+            class="project"
+            id="proj1"
+            alt="Printscreen from the first page of my personal webpage that is the first project I built. It says 'Hi there!' in scrabble letters and there are sunflowers in the background with a woman about to drag her hand through it. It has a picture of me beneath it and you see some text to the left of it. The headline says 'I'm Ceccilia' and the next underneath is too small to read in this view."
+          />
+          <img
+            src="/Pictures/Psycology game.png"
+            class="project"
+            alt="Printscreen of my game that I called 'Revers Psycology game'. It has a gray-ish background and cherryred details. You see the border of a red window with a red button in the middle."
+          />
+          <img
+            src="/Pictures/Habit-tracker.png"
+            class="project"
+            alt="Printscreen of a group project called 'Redaing tracker'. It has a bluegreen background and a window in the top center. The window is sandcoloread and you see a heading and a button, and some text between. The heading and button is in orange and the text is in black. The heading says 'Reading tracker'."
+          />
+          <div class="project"></div>
+          <div class="project"></div>
+          <div class="project"></div>
+          <div class="project"></div>
         </div>
-      </div>
-      <!-- HERE IS THE SECOND MODAL -->
-      <div class="modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close-project"><i class="fas fa-times"></i></span>
-            <h2>My personal webpage</h2>
-          </div>
-          <div class="modal-body">
-            <img
-              src="/Pictures/Psycology game.png"
-              class="modal-project-img"
-              alt="Printscreen of my game that I called 'Revers Psycology game'. It has a gray-ish background and cherryred details. You see the border of a red window with a red button in the middle."
-            />
-            <h3>What was the breif?</h3>
-            <p>
-              Here is some text regarding what I have learned during my first
-              project. I know that this is not good to write in the HTML but
-              right now this is what I know. I don't have a database and I
-              missed the LocalStorage learning really, so this is what I can
-              accomplish in this short time. Just writing some mote tect to see
-              whereig goes yes its filling up.
-            </p>
-            <h3>What did I learned?</h3>
-            <p>
-              I have learned a lot about buttons and links during this project.
-              Also worked alot with positioning, playing with grid and float
-              property and position property
-            </p>
-            <p>
-              <!-- <a href="">Visit this site</a>, Not published yet.-->
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- HERE IS THE THIRD MODAL -->
-      <div class="modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close-project"><i class="fas fa-times"></i></span>
-            <h2>My personal webpage</h2>
-          </div>
-          <div class="modal-body">
-            <img
-              src="/Pictures/Habit-tracker.png"
-              class="modal-project-img"
-              alt="Printscreen of a group project called 'Redaing tracker'. It has a bluegreen background and a window in the top center. The window is sandcoloread and you see a heading and a button, and some text between. The heading and button is in orange and the text is in black. The heading says 'Reading tracker'."
-            />
-            <h3>What was the breif?</h3>
-            <p>
-              Here is some text regarding what I have learned during my first
-              project. I know that this is not good to write in the HTML but
-              right now this is what I know. I don't have a database and I
-              missed the LocalStorage learning really, so this is what I can
-              accomplish in this short time. Just writing some mote tect to see
-              whereig goes yes its filling up.
-            </p>
-            <h3>What did I learned?</h3>
-            <p>
-              I have learned a lot about buttons and links during this project.
-              Also worked alot with positioning, playing with grid and float
-              property and position property
-            </p>
-            <p>
-              <!-- <a href="">Visit this site</a>, Not published yet.-->
-            </p>
-          </div>
-        </div>
-      </div>
-      <template id="template">
+        <!-- HERE IS THE FIRST MODAL -->
         <div class="modal">
           <div class="modal-content">
             <div class="modal-header">
@@ -233,6 +143,74 @@
             <div class="modal-body">
               <img
                 src="/Pictures/My personal page.png"
+                class="modal-project-img"
+                alt="Printscreen from the first page of my personal webpage that is the first project I built. It says 'Hi there!' in scrabble letters and there are sunflowers in the background with a woman about to drag her hand through it. It has a picture of me beneath it and you see some text to the left of it. The headline says 'I'm Ceccilia' and the next underneath is too small to read in this view."
+              />
+              <h3>What was the breif?</h3>
+              <p>
+                Here is some text regarding what I have learned during my first
+                project. I know that this is not good to write in the HTML but
+                right now this is what I know. I don't have a database and I
+                missed the LocalStorage learning really, so this is what I can
+                accomplish in this short time. Just writing some mote tect to
+                see whereig goes yes its filling up.
+              </p>
+              <h3>What did I learned?</h3>
+              <p>
+                I have learned a lot about buttons and links during this
+                project. Also worked alot with positioning, playing with grid
+                and float property and position property
+              </p>
+              <p>
+                <!-- <a href="">Visit this site</a>, Not published yet.-->
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- HERE IS THE SECOND MODAL -->
+        <div class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close-project"><i class="fas fa-times"></i></span>
+              <h2>My personal webpage</h2>
+            </div>
+            <div class="modal-body">
+              <img
+                src="/Pictures/Psycology game.png"
+                class="modal-project-img"
+                alt="Printscreen of my game that I called 'Revers Psycology game'. It has a gray-ish background and cherryred details. You see the border of a red window with a red button in the middle."
+              />
+              <h3>What was the breif?</h3>
+              <p>
+                Here is some text regarding what I have learned during my first
+                project. I know that this is not good to write in the HTML but
+                right now this is what I know. I don't have a database and I
+                missed the LocalStorage learning really, so this is what I can
+                accomplish in this short time. Just writing some mote tect to
+                see whereig goes yes its filling up.
+              </p>
+              <h3>What did I learned?</h3>
+              <p>
+                I have learned a lot about buttons and links during this
+                project. Also worked alot with positioning, playing with grid
+                and float property and position property
+              </p>
+              <p>
+                <!-- <a href="">Visit this site</a>, Not published yet.-->
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- HERE IS THE THIRD MODAL -->
+        <div class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close-project"><i class="fas fa-times"></i></span>
+              <h2>My personal webpage</h2>
+            </div>
+            <div class="modal-body">
+              <img
+                src="/Pictures/Habit-tracker.png"
                 class="modal-project-img"
                 alt="Printscreen of a group project called 'Redaing tracker'. It has a bluegreen background and a window in the top center. The window is sandcoloread and you see a heading and a button, and some text between. The heading and button is in orange and the text is in black. The heading says 'Reading tracker'."
               />
@@ -257,38 +235,75 @@
             </div>
           </div>
         </div>
-      </template>
-      <div class="end-of-page">
-        <button
-          onclick="window.location.href='#contact-link'"
-          class="contact-me"
-        >
-          Contact me to start a project!
-        </button>
+        <template id="template">
+          <div class="modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close-project"><i class="fas fa-times"></i></span>
+                <h2>My personal webpage</h2>
+              </div>
+              <div class="modal-body">
+                <img
+                  src="/Pictures/My personal page.png"
+                  class="modal-project-img"
+                  alt="Printscreen of a group project called 'Redaing tracker'. It has a bluegreen background and a window in the top center. The window is sandcoloread and you see a heading and a button, and some text between. The heading and button is in orange and the text is in black. The heading says 'Reading tracker'."
+                />
+                <h3>What was the breif?</h3>
+                <p>
+                  Here is some text regarding what I have learned during my
+                  first project. I know that this is not good to write in the
+                  HTML but right now this is what I know. I don't have a
+                  database and I missed the LocalStorage learning really, so
+                  this is what I can accomplish in this short time. Just writing
+                  some mote tect to see whereig goes yes its filling up.
+                </p>
+                <h3>What did I learned?</h3>
+                <p>
+                  I have learned a lot about buttons and links during this
+                  project. Also worked alot with positioning, playing with grid
+                  and float property and position property
+                </p>
+                <p>
+                  <!-- <a href="">Visit this site</a>, Not published yet.-->
+                </p>
+              </div>
+            </div>
+          </div>
+        </template>
+        <div class="end-of-page">
+          <button
+            onclick="window.location.href='#contact-link'"
+            class="contact-me"
+          >
+            Contact me to start a project!
+          </button>
+        </div>
       </div>
     </div>
     <div class="contact-page">
       <a id="contact-link"></a>
-      <span class="intro-paragraph">
-        <h2><span class="highlight-blue">Contact</span> me</h2>
-        <p>
-          There are several ways to connect with me, choose below what you
-          prefer and lets get in touch!
-        </p>
-      </span>
-      <div class="contact-container">
-        <div class="contact-general">
-          <i class="fas fa-envelope"></i> cecilia.hallerby@hyperisland.se
-        </div>
-        <div class="contact-general">
-          <i class="fab fa-github"></i> https://github.com/CeceStar
-        </div>
-        <div class="contact-general">
-          <i class="fab fa-linkedin-in"></i>
-          https://se.linkedin.com/in/cecilia-hallerby
-        </div>
-        <div class="contact-general">
-          <i class="fab fa-facebook-f"></i> Cecilia Hallerby
+      <div class="contact-page-content">
+        <span class="intro-paragraph">
+          <h2><span class="highlight-blue">Contact</span> me</h2>
+          <p>
+            There are several ways to connect with me, choose below what you
+            prefer and lets get in touch!
+          </p>
+        </span>
+        <div class="contact-container">
+          <div class="contact-general">
+            <i class="fas fa-envelope"></i> cecilia.hallerby@hyperisland.se
+          </div>
+          <div class="contact-general">
+            <i class="fab fa-github"></i> https://github.com/CeceStar
+          </div>
+          <div class="contact-general">
+            <i class="fab fa-linkedin-in"></i>
+            https://se.linkedin.com/in/cecilia-hallerby
+          </div>
+          <div class="contact-general">
+            <i class="fab fa-facebook-f"></i> Cecilia Hallerby
+          </div>
         </div>
       </div>
     </div>

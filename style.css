@@ -135,25 +135,27 @@ p {
   background-color: var(--light-blue);
   position: relative;
 }
-.home h1 {
+
+.home h1,
+.presentation {
   font-size: 2.4rem;
   font-weight: var(--raleway);
 }
 
+.hello {
+  font-size: 2.8rem;
+  font-weight: var(--raleway);
+}
+
+.hello i {
+  font-size: 2.8rem;
+  font-weight: var(--raleway);
+}
 .intro {
   padding-top: 30vh;
   text-align: center;
   margin: 0 auto;
   max-width: 420px;
-}
-
-.My-Name {
-  color: var(--dark-pink);
-  font-size: 2.4rem;
-}
-.FED {
-  color: var(--dark-blue);
-  font-size: 2.4rem;
 }
 
 .know-more {

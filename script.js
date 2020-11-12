@@ -106,3 +106,33 @@ function showThirdModal() {
     }
 }
 
+
+//Animations!
+ScrollReveal().reveal('.presentation', { 
+    delay: 1000, 
+    easing: 'ease-in',
+});
+
+ScrollReveal().reveal('.know-more', {
+    delay: 2300, 
+    easing: 'ease-in',
+});
+
+
+ScrollReveal().reveal('.about-me-content', {
+    delay: 300, 
+    easing: 'ease-in',
+    reset: 'true',
+});
+
+ScrollReveal().reveal('.portfolio-page-content', {
+    delay: 300, 
+    easing: 'ease-in',
+    reset: 'true',
+});
+
+ScrollReveal().reveal('.contact-page-content', {
+    delay: 300, 
+    easing: 'ease-in',
+    reset: 'true',
+});
