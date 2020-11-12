@@ -410,10 +410,12 @@ p {
   padding: 3rem;
 }
 
-.contact-general {
+.contact-general,
+.contact-general a {
   color: black;
   font-size: 1.4rem;
   margin-top: 5rem;
+  text-decoration: none;
 }
 
 .contact-general i {
