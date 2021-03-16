@@ -17,6 +17,10 @@
   --lighterdark-pink: #8c7284;
   --dark-pink: #846075;
   --dark-blue: #166088;
+  --font-size-h1: 3.6rem;
+  --font-size-h2: 2.4rem;
+  --font-size-h3: 1.6rem;
+  --font-size-p: 1.2rem;
 
   --raleway: "Raleway", sans-serif;
 }
@@ -52,6 +56,7 @@ p {
   font-size: 1.2rem;
   width: 80vw;
   margin: 0 auto;
+  font-family: var(--raleway);
 }
 
 /*---------------------Intro page---------------------*/
